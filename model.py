@@ -19,7 +19,7 @@ class bottleneck(nn.Module):
         nn.BatchNorm2d(self.input_c * t),
         nn.ReLU6(inplace=True),
         #DEPTHWISE
-        nn.Conv2d(self.input_c * t, self.input_c * t, 3, self.stride, 1, groups=self.input_c * self.t, bias=False), 
+        nn.Conv2d(self.input_c * t, self.input_c * t, 3, self.stride, 1, groups=self.input_c * self.t, bias=False), #groups indicates depthwise convolution
         nn.BatchNorm2d(self.input_c * self.t),
         nn.ReLU6(inplace=True),
         #POINTWISE
