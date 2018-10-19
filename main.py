@@ -58,7 +58,7 @@ for i in range(opt.niter):
         lr_scheduler.step()
         train_losses.append(loss.data)
     
-    train_acc = float(corrects) / len(testSet)
+    train_acc = float(corrects) / len(trainSet)
     writer.add_scalar('data/train_loss' , np.sum(train_losses) / len(train_losses),i)
     writer.add_scalar('data/train_acc' , train_acc ,i)
     f.write("%5.5f  "% (np.sum(train_losses) / len(train_losses)))
