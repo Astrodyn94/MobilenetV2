@@ -19,7 +19,7 @@ class bottleneck(nn.Module):
         nn.BatchNorm2d(self.input_c * t),
         nn.ReLU6(inplace=True),
         #DEPTHWISE
-        nn.Conv2d(self.input_c * t, self.input_c * t, 3, self.stride, 1, groups=self.input_c * self.t, bias=False), #input과 output channel수가 같다#groups는 무엇? 
+        nn.Conv2d(self.input_c * t, self.input_c * t, 3, self.stride, 1, groups=self.input_c * self.t, bias=False), 
         nn.BatchNorm2d(self.input_c * self.t),
         nn.ReLU6(inplace=True),
         #POINTWISE
