@@ -16,4 +16,10 @@ Dataset(dir)
 ```
 # Dataset Example
 ![1](./data_example.png)
-# 
+# Testset Accuracy 
+As mentioned in the paper (Figure 6), linear bottleneck with residual connection shows the best performance.
+Also, as illustrated in the paper Figure 6-(b), residual connection significantly improves the model performance.
+![2](./testset_accuracy.png)
+# Hyperparameters
+I used the same hyperparameters that are satated in the paepr section 6-1(training setup for imagenet classification) except for the optimizer. When trained with RMSPropOptimizer, training loss diverged for unknown reasons. Therefore, SGD optimizer was used.
+
