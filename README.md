@@ -14,4 +14,6 @@ Dataset(dir)
   -test(dir) : 1626 images
     same with traindir
 ```
-## Dataset Example
+# Dataset Example
+![1](./data_example.png)
+# 
