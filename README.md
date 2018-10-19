@@ -1,7 +1,7 @@
 # MobilenetV2 with Pytorch 
 ```bash
 Dataset : Caltech 101 classification dataset 
-download link : http://www.vision.caltech.edu/Image_Datasets/Caltech101/#Download
+download link : (http://www.vision.caltech.edu/Image_Datasets/Caltech101/#Download)
 
 Dataset(dir)
   -train(dir) : 6672 images
@@ -13,6 +13,9 @@ Dataset(dir)
     -category 101
   -test(dir) : 1626 images
     same with traindir
+
+Requirements
+  pytorch 0.4.0 / tensorboard 
 ```
 # Dataset Example
 ![1](./data_example.png)
