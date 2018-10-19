@@ -1,7 +1,6 @@
 class BaseOptions():
     def initialize(self):
         self.dataroot = '/repo3/101_ObjectCategories/' # path to the dir of the dataset
-        self.checkpoints_dir = './checkpoints' # models are saved here
         self.name = 'Mobilenetv2_default' # Name of the experiment
         self.batch_size =5  
 
@@ -9,7 +8,7 @@ class TrainOptions(BaseOptions):
     def __init__(self):
 
         BaseOptions.initialize(self)
-        self.niter = 400
+        self.niter = 100
         self.input_c = 32 #input # of channel
         self.final_c = 1280 #last # of channel
         self.dropout = 0.2 #dropout rate
